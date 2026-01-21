@@ -30,3 +30,10 @@ tasks.register('playwright', JavaExec) {
     classpath sourceSets.test.runtimeClasspath
     mainClass = 'com.microsoft.playwright.CLI'
 }
+
+tasks.register('playwrightInstall', JavaExec) {
+    // Run Playwright CLI: com.microsoft.playwright.CLI install --with-deps
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.microsoft.playwright.CLI'
+    args = ['install', '--with-deps']
+}

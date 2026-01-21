@@ -22,7 +22,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Installer les navigateurs Playwright
-        run: ./gradlew playwright --no-daemon
+        run: ./gradlew playwrightInstall --no-daemon
 
       - name: Lancer les tests
         run: ./gradlew test --no-daemon
