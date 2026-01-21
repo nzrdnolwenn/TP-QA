@@ -69,7 +69,6 @@ public class TodoMvcTest {
         assertTrue(page.getByText("Aller courir").isVisible(),
                 "\"Aller courir\" devrait être toujours visible");
 
-        page.pause();
 
         context.close();
     }

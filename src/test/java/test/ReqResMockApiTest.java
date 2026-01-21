@@ -49,7 +49,6 @@ public class ReqResMockApiTest {
 
         page.click("text=List Users");
 
-        page.pause();
 
         assertTrue(page.getByText("Jean").isVisible());
         assertTrue(page.getByText("Claire").isVisible());
@@ -84,7 +83,6 @@ public class ReqResMockApiTest {
         page.click("text=/users");
         page.click("text=Try it out");
         page.click("text=Execute");
-        page.pause();
         assertTrue(page.getByText("mock@example.com").isVisible());
 
 
